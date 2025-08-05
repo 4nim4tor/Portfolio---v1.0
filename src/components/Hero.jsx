@@ -2,7 +2,7 @@ import "../styles/Hero.css";
 
 export default function Hero() {
   return (
-    <section className="hero" id="home">
+    <section className="hero section" id="home">
       <div className="profile-circle">
         <img src="../assets/Profile-Pic.png" alt="Profile portrait of Artur" />
       </div>

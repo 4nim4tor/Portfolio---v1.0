@@ -1,28 +1,46 @@
+import { useState } from "react";
+import "../styles/projects.css";
+import projects from "../data/projects";
+import ProjectCard from "./ProjectsCard";
+
 export default function Projects() {
+  const [current, setCurrent] = useState(0);
+  const project = projects[current];
+
+  const nextSlide = () => {
+    setCurrent((prev) => (prev + 1) % projects.length);
+  };
+
+  const prevSlide = () => {
+    setCurrent((prev) => (prev - 1 + projects.length) % projects.length);
+  };
+
+  const goToSlide = (index) => {
+    setCurrent(index);
+  };
+
   return (
-    <section
-      id="projects"
-      style={{ padding: "4rem 2rem", textAlign: "center" }}
-    >
-      <h2 style={{ color: "var(--accent-color)" }}>Projects</h2>
-      <div style={{ marginTop: "2rem" }}>
-        <div
-          style={{
-            border: "1px solid var(--accent-color)",
-            padding: "2rem",
-            margin: "1rem auto",
-            maxWidth: "600px",
-            borderRadius: "12px",
-          }}
-        >
-          <h3>Project 1</h3>
-          <p>
-            A short description of what the project does and what tech it uses.
-          </p>
-          <a href="#" style={{ color: "var(--accent-color)" }}>
-            View Project
-          </a>
+    <section className="projects section" id="projects">
+      <h2 className="section-title">Featured Projects</h2>
+
+      <ProjectCard project={project} />
+
+      <div className="project-navigation">
+        <button className="nav-arrow" onClick={prevSlide}>
+          ←
+        </button>
+        <div className="dots">
+          {projects.map((_, index) => (
+            <span
+              key={index}
+              className={`dot ${index === current ? "active" : ""}`}
+              onClick={() => goToSlide(index)}
+            />
+          ))}
         </div>
+        <button className="nav-arrow" onClick={nextSlide}>
+          →
+        </button>
       </div>
     </section>
   );

@@ -1,0 +1,31 @@
+.header {
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid var(--accent-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--bg-color);
+}
+
+.logo {
+    color: var(--accent-color);
+    font-weight: bold;
+    text-shadow: var(--glow);
+}
+
+.nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav a {
+    color: #aaa;
+}
+
+.nav a.active {
+    color: var(--accent-color);
+    font-weight: bold;
+}

@@ -1,5 +1,5 @@
 .about {
-    background-color: #111111;
+    background-color: var(--section-bg);
     display: flex;
     flex-direction: column;
     justify-content: center;

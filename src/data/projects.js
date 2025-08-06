@@ -13,7 +13,7 @@ const projects = [
     description:
       "A personal developer portfolio built with React, showcasing skills and projects with a modern UI.",
     technologies: "React, CSS Modules, Vite",
-    image: "Project 2",
+    image: "Project 2", // Replace with <img> or imported image later
     demoLink: "#",
     codeLink: "#",
   },
@@ -22,7 +22,7 @@ const projects = [
     description:
       "A task management app with CRUD functionality, user auth, and responsive design.",
     technologies: "React, Express, MongoDB",
-    image: "Project 3",
+    image: "Project 3", // Replace with <img> or imported image later
     demoLink: "#",
     codeLink: "#",
   },

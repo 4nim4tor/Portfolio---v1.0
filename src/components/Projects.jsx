@@ -1,5 +1,9 @@
 import { useState } from "react";
+import ArrowLeft from "../assets/ArrowLeftIcon.svg?react";
+import ArrowRight from "../assets/ArrowRightIcon.svg?react";
+
 import "../styles/projects.css";
+
 import projects from "../data/projects";
 import ProjectCard from "./ProjectsCard";
 
@@ -27,7 +31,7 @@ export default function Projects() {
 
       <div className="project-navigation">
         <button className="nav-arrow" onClick={prevSlide}>
-          ←
+          <ArrowLeft className="arrow-icon" />
         </button>
         <div className="dots">
           {projects.map((_, index) => (
@@ -39,7 +43,7 @@ export default function Projects() {
           ))}
         </div>
         <button className="nav-arrow" onClick={nextSlide}>
-          →
+          <ArrowRight className="arrow-icon" />
         </button>
       </div>
     </section>

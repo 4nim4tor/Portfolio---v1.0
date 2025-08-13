@@ -1,40 +1,53 @@
+import "../styles/Contact.css";
+
+import GitHubIcon from "../assets/GitHub.svg?react";
+import LinkedInIcon from "../assets/LinkedIn.svg?react";
+import ContactForm from "./ContactForm";
+
 export default function Contact() {
-  return (
-    <section id="contact" style={{ padding: "4rem 2rem", textAlign: "center" }}>
-      <h2 style={{ color: "var(--accent-color)" }}>Let’s Work Together</h2>
-      <form
-        style={{
-          maxWidth: "500px",
-          margin: "2rem auto",
-          display: "flex",
-          flexDirection: "column",
-          gap: "1rem",
-        }}
-      >
-        <input type="text" placeholder="Name" style={{ padding: "0.75rem" }} />
-        <input
-          type="email"
-          placeholder="Email"
-          style={{ padding: "0.75rem" }}
-        />
-        <textarea
-          placeholder="Your message"
-          rows="5"
-          style={{ padding: "0.75rem" }}
-        ></textarea>
-        <button
-          type="submit"
-          style={{
-            backgroundColor: "var(--accent-color)",
-            border: "none",
-            padding: "1rem",
-            cursor: "pointer",
-            fontWeight: "bold",
-          }}
-        >
-          Send
-        </button>
-      </form>
-    </section>
-  );
+	return (
+		<section className="contact section" id="contact">
+			<h2 className="section-title">Let’s Work Together</h2>
+
+			<div className="contact-wrapper">
+				<div className="contact-left">
+					<h3 className="contact-subtitle">Get In Touch</h3>
+					<p className="contact-description">
+						Ready to bring your ideas to life? I’m always excited to work on new
+						projects and collaborate with amazing people. Let’s discuss how we
+						can create something incredible together.
+					</p>
+					<div className="social-links">
+						<a
+							href="https://www.linkedin.com/in/artur-jaworski-679287352/"
+							className="social-icon"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<img src={LinkedInIcon} alt="LinkedIn" />
+						</a>
+						<a
+							href="https://github.com/4nim4tor"
+							className="social-icon"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<img src={GitHubIcon} alt="GitHub" />
+						</a>
+						<a
+							href="#"
+							className="social-icon"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<img src={LinkedInIcon} alt="TBD" />
+						</a>
+					</div>
+				</div>
+				<div className="contact-right">
+					<ContactForm />
+				</div>
+			</div>
+		</section>
+	);
 }

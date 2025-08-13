@@ -8,21 +8,28 @@
     width: 350px;
     height: 350px;
     border-radius: 50%;
-    border: 2px solid var(--accent-color);
-    margin: 0 auto 1.5rem;
+    border: 5px solid var(--accent-color);
+    margin: 1.5rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-circle img {
+    color: var(--accent-color);
 }
 
 .hero h1 {
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--accent-color);
-    margin-bottom: 0.5rem;
-    text-shadow: 0 0 5px var(--accent-color);
+    margin: 2rem;
 }
 
 .subtitle {
     font-size: 1.2rem;
-    color: #aaa;
+    color: #ccc;
     margin-bottom: 1rem;
 }
 
@@ -30,7 +37,7 @@
     max-width: 600px;
     margin: 0 auto 2rem;
     font-size: 1rem;
-    color: #888;
+    color: #aaa;
     line-height: 1.6;
 }
 
@@ -45,7 +52,6 @@
     font-size: 1rem;
     font-weight: 600;
     padding: 0.75rem 1.75rem;
-    border-radius: 4px;
     transition: all 0.3s ease;
 }
 
@@ -64,4 +70,50 @@
 .hero-buttons button:hover {
     transform: scale(1.05);
     box-shadow: 0 0 15px var(--accent-color);
+}
+
+.typewriter-container {
+    display: inline-block;
+    font-family: monospace;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid var(--accent-color);
+    width: 0;
+    animation:
+        typing 9s steps(24, end) infinite,
+        blinking 1s step-end infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0ch;
+    }
+
+    30% {
+        width: 16ch;
+    }
+
+    90.99% {
+        width: 16ch;
+    }
+
+    91% {
+        width: 0ch;
+    }
+
+    100% {
+        width: 0ch;
+    }
+}
+
+@keyframes blinking {
+
+    0%,
+    100% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: var(--accent-color);
+    }
 }

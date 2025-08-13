@@ -1,0 +1,16 @@
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    fill: var(--accent-color);
+    transition: filter 0.3s ease;
+    border-radius: 5px;
+}

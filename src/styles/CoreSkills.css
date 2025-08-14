@@ -6,6 +6,10 @@
     position: relative;
 }
 
+.core-skills {
+    margin-bottom: 5rem;
+}
+
 .skills-grid {
     display: flex;
     flex-direction: column;
@@ -21,7 +25,7 @@
     margin: 0 -0.3rem;
 }
 
-.offset-row {
+.skills-offset-row {
     margin: -4.3rem -0.3rem;
 }
 
@@ -53,58 +57,56 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #111;
+    background-color: #000;
     clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
     text-decoration: none;
     width: 97%;
     height: 97%;
+    overflow: visible;
 }
 
 .skill-hex span {
-    margin-top: 0.7rem;
+    margin-top: 0.8rem;
     font-size: 0.9rem;
     color: var(--accent-color);
 }
 
-.icon {
+.skills-icon {
     width: 96px;
     height: 96px;
     fill: var(--accent-color);
     transition: filter 0.3s ease;
-    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.6));
     border-radius: 5px;
 }
 
-
-
-.js-icon {
-    filter: drop-shadow(0 0 20px #fbff00)
+.javascript-icon {
+    filter: drop-shadow(0 0 10px #fbff00)
 }
 
-.node-icon {
-    filter: drop-shadow(0 0 20px #ffffff)
+.nodejs-icon {
+    filter: drop-shadow(0 0 10px #ffffff);
 }
 
-.css-icon {
-    filter: drop-shadow(0 0 20px #00d9ff)
+.css3-icon {
+    filter: drop-shadow(0 0 10px #00d9ff)
 }
 
-.html-icon {
-    filter: drop-shadow(0 0 20px #fc4d1d)
+.html5-icon {
+    filter: drop-shadow(0 0 10px #fc4d1d)
 }
 
 .react-icon {
-    filter: drop-shadow(0 0 20px #10efff)
+    filter: drop-shadow(0 0 10px #10efff)
 }
 
 .vite-icon {
-    filter: drop-shadow(0 0 20px #993cf0)
+    filter: drop-shadow(0 0 10px #993cf0)
 }
 
-.next-icon {
-    filter: drop-shadow(0 0 20px #ffffff)
+.nextjs-icon {
+    filter: drop-shadow(0 0 10px #ffffff)
 }
 
-.tailwind-icon {
-    filter: drop-shadow(0 0 20px #00f7ff)
+.tailwindcss-icon {
+    filter: drop-shadow(0 0 10px #00f7ff)
 }

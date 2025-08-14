@@ -18,18 +18,19 @@
 .tech-row {
   display: flex;
   justify-content: center;
-  margin: 0 -0.3rem;
+  margin: 0;
+  gap: 4rem;
 }
 
-.offset-row {
-  margin: -4.3rem -0.3rem;
+.tech-offset-row {
+  margin: -7.5rem 0;
 }
 
 .diammond {
   width: 240px;
   height: 240px;
   background-color: var(--accent-color);
-  clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,30 +48,46 @@
   overflow: visible;
 }
 
-.tech-hex {
+.tech-diammond {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #111;
-  clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+  background-color: #000;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   text-decoration: none;
   width: 97%;
   height: 97%;
 }
 
-.tech-hex span {
+.tech-diammond span {
   margin-top: 0.7rem;
   font-size: 0.9rem;
   color: var(--accent-color);
 }
 
-.icon {
-  width: 96px;
-  height: 96px;
+.tech-icon {
+  width: 90px;
+  height: 90px;
   fill: var(--accent-color);
   transition: filter 0.3s ease;
-  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.6));
   border-radius: 5px;
+}
+
+.vscode-icon {
+  filter: drop-shadow(0 0 10px #00d9ff);
+}
+
+.github-icon {
+  filter: drop-shadow(0 0 10px #ffffff);
+  border-radius: 15px;
+}
+
+.openai-icon {
+  filter: drop-shadow(0 0 10px #ffffff);
+}
+
+.figma-icon {
+  filter: drop-shadow(0 0 10px #d89519);
 }

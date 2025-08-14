@@ -1,3 +1,4 @@
+import techs from "../data/technologies";
 import "../styles/Technologies.css";
 
 function chunkArray(array, sizes) {
@@ -15,16 +16,18 @@ function chunkArray(array, sizes) {
 }
 
 export default function Technologies() {
-	const rows = chunkArray(techs, [2, 3]);
+	const rows = chunkArray(techs, [1, 2]);
 
 	return (
 		<section className="technologies" id="technologies">
-			<h3 className="sub-section-title">Core Skills</h3>
+			<h3 className="sub-section-title">Technologies</h3>
 
 			<div className="tech-grid">
 				{rows.map((row, rowIndex) => (
 					<div
-						className={`tech-row ${rowIndex % 2 === 1 ? "offset-row" : ""}`}
+						className={`tech-row ${
+							rowIndex % 2 === 1 ? "tech-offset-row" : ""
+						}`}
 						key={rowIndex}
 					>
 						{row.map(({ Icon, name, link }) => (
@@ -36,9 +39,9 @@ export default function Technologies() {
 									rel="noopener noreferrer"
 								>
 									<Icon
-										className={`icon ${name
+										className={`tech-icon ${name
 											.toLowerCase()
-											.replace(".", "")}-icon`}
+											.replace(" ", "")}-icon`}
 									/>
 									<span>{name}</span>
 								</a>

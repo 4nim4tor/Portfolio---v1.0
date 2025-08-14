@@ -25,7 +25,9 @@ export default function CoreSkills() {
 			<div className="skills-grid">
 				{rows.map((row, rowIndex) => (
 					<div
-						className={`skills-row ${rowIndex % 2 === 1 ? "offset-row" : ""}`}
+						className={`skills-row ${
+							rowIndex % 2 === 1 ? "skills-offset-row" : ""
+						}`}
 						key={rowIndex}
 					>
 						{row.map(({ Icon, name, link }) => (
@@ -37,7 +39,7 @@ export default function CoreSkills() {
 									rel="noopener noreferrer"
 								>
 									<Icon
-										className={`icon ${name
+										className={`skills-icon ${name
 											.toLowerCase()
 											.replace(".", "")}-icon`}
 									/>

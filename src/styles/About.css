@@ -76,7 +76,7 @@
     max-width: 500px;
     flex: 1;
     min-width: 280px;
-    background-color: #1a1a1a;
+    background-color: var(--section-bg);
     border: 2px solid var(--accent-color);
     display: flex;
     justify-content: center;

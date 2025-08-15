@@ -1,7 +1,7 @@
 .sub-section-title {
     text-align: center;
     font-size: 1.5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     color: var(--accent-color);
     position: relative;
 }
@@ -57,7 +57,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #000;
+    background-color: var(--bg-color);
     clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
     text-decoration: none;
     width: 97%;
@@ -81,10 +81,6 @@
 
 .javascript-icon {
     filter: drop-shadow(0 0 10px #fbff00)
-}
-
-.nodejs-icon {
-    filter: drop-shadow(0 0 10px #ffffff);
 }
 
 .css3-icon {

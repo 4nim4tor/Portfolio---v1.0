@@ -16,7 +16,7 @@ function chunkArray(array, sizes) {
 }
 
 export default function CoreSkills() {
-	const rows = chunkArray(skills, [3, 2]);
+	const rows = chunkArray(skills, [2, 3]);
 
 	return (
 		<section className="core-skills" id="core-skills">

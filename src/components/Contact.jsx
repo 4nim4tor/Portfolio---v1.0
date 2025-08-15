@@ -24,7 +24,7 @@ export default function Contact() {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<img src={LinkedInIcon} alt="LinkedIn" />
+							<LinkedInIcon className="linked-in-icon" />
 						</a>
 						<a
 							href="https://github.com/4nim4tor"
@@ -32,7 +32,7 @@ export default function Contact() {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<img src={GitHubIcon} alt="GitHub" />
+							<GitHubIcon className="git-hub-icon" />
 						</a>
 						<a
 							href="#"
@@ -40,7 +40,7 @@ export default function Contact() {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<img src={LinkedInIcon} alt="TBD" />
+							<img src={LinkedInIcon} alt="TBD" className="???-icon" />
 						</a>
 					</div>
 				</div>

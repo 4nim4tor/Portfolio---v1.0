@@ -1,5 +1,4 @@
 import JS from "../assets/JavaScript.svg?react";
-import Node from "../assets/Node.js.svg?react";
 import CSS from "../assets/CSS.svg?react";
 import HTML from "../assets/HTML.svg?react";
 import React from "../assets/React.svg?react";
@@ -24,7 +23,7 @@ const skills = [
 		name: "JavaScript",
 		link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
 	},
-	{ Icon: Node, name: "Node.js", link: "https://nodejs.org/" },
+
 	{ Icon: Next, name: "Next.js", link: "https://nextjs.org/" },
 	{ Icon: Tailwind, name: "Tailwind.css", link: "https://tailwindcss.com/" },
 	{ Icon: Vite, name: "Vite", link: "https://vitejs.dev/" },

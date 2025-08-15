@@ -41,7 +41,8 @@ export default function Technologies() {
 									<Icon
 										className={`tech-icon ${name
 											.toLowerCase()
-											.replace(" ", "")}-icon`}
+											.replace(" ", "")
+											.replace(".", "")}-icon`}
 									/>
 									<span>{name}</span>
 								</a>

@@ -5,23 +5,6 @@
     justify-content: center;
 }
 
-.section-title {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 3rem;
-    color: var(--accent-color);
-    position: relative;
-}
-
-.section-title::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 3px;
-    background-color: var(--accent-color);
-    margin: 0.5rem auto 0;
-}
-
 .about-content {
     display: flex;
     flex-wrap: wrap;

@@ -7,7 +7,9 @@ import ContactForm from "./ContactForm";
 export default function Contact() {
 	return (
 		<section className="contact section" id="contact">
-			<h2 className="section-title">Let’s Work Together</h2>
+			<h2 className="section-title typewriter-animation-1">
+				Let’s Work Together
+			</h2>
 
 			<div className="contact-wrapper">
 				<div className="contact-left">

@@ -14,7 +14,6 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin-top: 2rem;
     padding: 1rem;
     align-items: center;
 }
@@ -22,16 +21,15 @@
 .skills-row {
     display: flex;
     justify-content: center;
-    margin: 0 -0.3rem;
 }
 
 .skills-offset-row {
-    margin: -4.3rem -0.3rem;
+    margin: -4rem -0.3rem;
 }
 
 .hex {
-    width: 240px;
-    height: 240px;
+    width: 250px;
+    height: 250px;
     background-color: var(--accent-color);
     clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
     display: flex;

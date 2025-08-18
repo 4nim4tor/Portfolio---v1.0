@@ -6,7 +6,13 @@ export default function Hero() {
 			<div className="profile-circle">
 				<img src="../assets/Profile-Pic.png" alt="Profile portrait of Artur" />
 			</div>
-			<h1 className="typewriter-container"> [Artur Jaworski] </h1>
+			<h1
+				className="typewriter-container matrix-text"
+				data-text="[Artur Jaworski]"
+			>
+				{" "}
+				[Artur Jaworski]{" "}
+			</h1>
 			<p className="subtitle">Front-End Web Developer</p>
 			<p className="description">
 				Passionate about creating innovative web solutions that combine

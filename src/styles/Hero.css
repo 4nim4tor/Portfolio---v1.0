@@ -2,6 +2,7 @@
     text-align: center;
     padding: 4rem 1rem;
     color: var(--text-color);
+    background-color: var(--bg-color-section-0);
 }
 
 .profile-circle {
@@ -9,6 +10,7 @@
     height: 350px;
     border-radius: 50%;
     border: 5px solid var(--accent-color);
+    background-color: var(--bg-color);
     margin: 1.5rem auto;
     display: flex;
     justify-content: center;
@@ -75,7 +77,7 @@
 
 .matrix-text {
     position: relative;
-    text-shadow: 0 0 5px #0f0, 0 0 10px #0f0, 0 0 15px #0f0;
+    text-shadow: 0 0 5px var(--accent-color), 0 0 10px var(--accent-color), 0 0 15px var(--accent-color);
     animation: flicker 4s infinite;
     z-index: 2;
 }
@@ -90,8 +92,8 @@
     animation: glitch 1.5s infinite;
     clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
     transform: translate(-5px, -5px);
-    color: #0f0;
-    text-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
+    color: var(--accent-color);
+    text-shadow: 0 0 10px var(--accent-color), 0 0 20px var(--accent-color);
 }
 
 .matrix-text::after {
@@ -104,8 +106,8 @@
     animation: glitchAlt 2s infinite;
     clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
     transform: translate(5px, -5px);
-    color: #0f0;
-    text-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
+    color: var(--accent-color);
+    text-shadow: 0 0 10px var(--accent-color), 0 0 20px var(--accent-color);
     opacity: 0.8;
     z-index: 1;
 }

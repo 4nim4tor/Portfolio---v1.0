@@ -9,17 +9,23 @@ import Footer from "./components/Footer";
 import SkillsAndTechnologies from "./components/SkillsAndTechnologies";
 
 function App() {
-  return (
-    <div className="app-container">
-      <Header />
-      <Hero />
-      <About />
-      <Projects />
-      <SkillsAndTechnologies />
-      <Contact />
-      <Footer />
-    </div>
-  );
+	return (
+		<div className="app-container">
+			<div className="video-overlay">
+				<video autoPlay loop muted playsInline className="background-video">
+					<source src="/videos/background.mp4" type="video/mp4" />
+					Your browser does not support the video tag.
+				</video>
+			</div>
+			<Header />
+			<Hero />
+			<About />
+			<Projects />
+			<SkillsAndTechnologies />
+			<Contact />
+			<Footer />
+		</div>
+	);
 }
 
 export default App;

@@ -1,4 +1,4 @@
-.contact.section {
+.contact {
     padding: 4rem 2rem;
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -62,11 +62,13 @@
 .contact-left {
     flex: 1;
     min-width: 250px;
+    text-align: start;
 }
 
 .contact-right {
     flex: 1;
     min-width: 250px;
+    text-align: start;
 }
 
 .contact-subtitle {

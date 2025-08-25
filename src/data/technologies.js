@@ -23,7 +23,7 @@ const techs = [
 		name: "Open AI",
 		link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
 	},
-	{ Icon: Figma, name: "Figma", link: "https://nodejs.org/" },
+	{ Icon: Figma, name: "Figma", link: "https://www.figma.com/" },
 	{ Icon: Node, name: "Node.js", link: "https://nodejs.org/" },
 	{ Icon: Vercel, name: "Vercel", link: "https://vercel.com" },
 	{

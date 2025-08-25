@@ -1,42 +1,53 @@
 import "../styles/About.css";
 
 export default function About() {
+	const stats = [
+		{ value: "10+", label: "Projects Completed" },
+		{ value: "2+", label: "Years of Web Development Experience" },
+		{ value: "3", label: "Languages Spoken Fluently" },
+	];
+
 	return (
 		<section id="about" className="about section">
-			<h2 className="section-title">About Me</h2>
+			<h2 className="section-title">About Me, Me, Me... and Me too!</h2>
+			<p className="section-motto">
+				“The cake may be a lie, but clean code is the real dream.”
+			</p>
 			<div className="about-content">
 				<div className="about-text">
-					<h2>My Journey</h2>
+					<h2>Curious by nature, strategic by design.</h2>
 					<p>
-						With over <strong>[X]</strong> years of experience in web
-						development, I’ve had the privilege of working with diverse clients
-						and projects. My journey began with a curiosity for how websites
-						work, which evolved into a passion for creating digital experiences
-						that make a difference.
+						My journey into web development began with a scientific mindset and
+						a passion for problem-solving. I originally pursued molecular
+						biotechnology, but along the way discovered a deeper interest in
+						technology and design. That shift led me into front-end
+						development—where creativity meets logic, and every bug is just a
+						misunderstood feature waiting to be fixed.
 					</p>
 					<p>
-						I specialize in building responsive, user-friendly applications
-						using modern technologies. Whether it's a simple landing page or a
-						complex web app, I approach each project with attention to detail
-						and a commitment to quality.
+						Through hands-on training and real-world projects, I’ve built
+						responsive, user-centered websites using HTML, CSS, JavaScript, and
+						React. I thrive on crafting intuitive digital experiences that
+						balance aesthetics with accessibility.
 					</p>
-					<div className="about-stats">
-						<div className="stat">
-							<span>50+</span>
-							<small>Projects Completed</small>
-						</div>
-						<div className="stat">
-							<span>X+</span>
-							<small>Years Experience</small>
-						</div>
-						<div className="stat">
-							<span>30+</span>
-							<small>Happy Clients</small>
-						</div>
-					</div>
+					<p>
+						I’m known for being calm under pressure, adaptable, and structured
+						in my approach. I work comfortably with tools like Git, VS Code, and
+						Figma, and I’m always exploring new ways to improve user
+						experience—whether through cleaner code, smarter workflows, or
+						simply asking better questions.
+					</p>
 				</div>
 				<div className="about-image">
-					<p>About Image</p>
+					<img src="/path/to/image.jpg" alt="Image of coding?" />
+				</div>
+				<div className="about-stats">
+					{stats.map((stat, index) => (
+						<div className="stat" key={index}>
+							<span>{stat.value}</span>
+							<small>{stat.label}</small>
+						</div>
+					))}
 				</div>
 			</div>
 		</section>

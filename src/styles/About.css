@@ -5,12 +5,20 @@
     justify-content: center;
 }
 
+.section-motto {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #ccc;
+    margin: -1rem 0 1rem 0;
+
+}
+
 .about-content {
     display: flex;
     flex-wrap: wrap;
-    margin: 3rem 5rem;
-    align-items: flex-start;
-    justify-content: space-between;
+    margin: 2rem 5rem;
+    align-items: center;
+    justify-content: center;
     gap: 2rem;
     flex: 1;
 }

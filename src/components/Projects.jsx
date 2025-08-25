@@ -25,7 +25,7 @@ export default function Projects() {
 
 	return (
 		<section className="projects section" id="projects">
-			<h2 className="section-title">Featured Projects</h2>
+			<h2 className="section-title">Test Chamber Logs</h2>
 
 			<ProjectCard project={project} />
 

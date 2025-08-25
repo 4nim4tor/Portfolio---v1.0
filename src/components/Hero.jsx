@@ -13,7 +13,7 @@ export default function Hero() {
 				{" "}
 				[Artur Jaworski]{" "}
 			</h1>
-			<p className="subtitle">Front-End Web Developer</p>
+			<p className="subtitle">Front-End Developer & Web Architect</p>
 			<p className="description">
 				Passionate about creating innovative web solutions that combine
 				beautiful design with powerful functionality. Specializing in modern

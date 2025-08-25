@@ -1,7 +1,6 @@
-import CoreSkills from "./CoreSkills.jsx";
-import Technologies from "./Technologies.jsx";
-
 import "../styles/SkillsAndTechnologies.css";
+import CoreSkills from "./subcomponents/CoreSkills.jsx";
+import Technologies from "./subcomponents/Technologies.jsx";
 
 export default function SkillsAndTechnologies() {
 	return (

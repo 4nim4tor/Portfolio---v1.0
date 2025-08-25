@@ -1,5 +1,5 @@
-import techs from "../data/technologies";
-import "../styles/Technologies.css";
+import techs from "../../data/technologies";
+import "../../styles/Technologies.css";
 
 function chunkArray(array, sizes) {
 	const result = [];

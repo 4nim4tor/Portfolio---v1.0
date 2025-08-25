@@ -5,7 +5,7 @@ import ArrowRight from "../assets/ArrowRightIcon.svg?react";
 import "../styles/Projects.css";
 
 import projects from "../data/projects";
-import ProjectCard from "./ProjectsCard";
+import ProjectCard from "./subcomponents/ProjectsCard";
 
 export default function Projects() {
 	const [current, setCurrent] = useState(0);

@@ -1,5 +1,5 @@
-import "../styles/CoreSkills.css";
-import skills from "../data/skills";
+import "../../styles/CoreSkills.css";
+import skills from "../../data/skills.js";
 
 function chunkArray(array, sizes) {
 	const result = [];

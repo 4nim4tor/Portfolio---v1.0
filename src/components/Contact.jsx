@@ -2,7 +2,7 @@ import "../styles/Contact.css";
 
 import GitHubIcon from "../assets/GitHub.svg?react";
 import LinkedInIcon from "../assets/LinkedIn.svg?react";
-import ContactForm from "./ContactForm";
+import ContactForm from "./subcomponents/ContactForm";
 
 export default function Contact() {
 	return (

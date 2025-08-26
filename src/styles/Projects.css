@@ -15,6 +15,7 @@
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
 }
 
 .project-details {
@@ -81,16 +82,15 @@
 .project-image img {
     width: 100%;
     height: auto;
-    transition: transform 0.4s ease;
     object-fit: cover;
     border-radius: inherit;
-    z-index: 2;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
     transform-origin: center;
 }
 
 .project-image:hover img {
-    transform: scale(1.15);
-    box-shadow: 0 10px 30px rgba(0, 255, 94, 0.4);
+    transform: scale(1.2);
+    box-shadow: 0 10px 30px rgba(0, 255, 94, 0.3);
 }
 
 .project-navigation {
@@ -133,4 +133,47 @@
     width: 24px;
     height: 24px;
     fill: var(--accent-color);
+}
+
+.project-card-wrapper {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.project-card {
+    opacity: 0;
+    transform: scale(0.98);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.project-card.active {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+}
+
+.project-card-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0.96);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.project-card-content.active {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.2s;
+    position: relative;
+    pointer-events: auto;
+    z-index: 1;
 }

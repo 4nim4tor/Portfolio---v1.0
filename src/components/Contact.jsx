@@ -3,14 +3,15 @@ import "../styles/Contact.css";
 import GitHubIcon from "../assets/GitHub.svg?react";
 import LinkedInIcon from "../assets/LinkedIn.svg?react";
 import ContactForm from "./subcomponents/ContactForm";
+import AccessibleSection from "./subcomponents/AccessibleSection";
 
 export default function Contact() {
 	return (
-		<section className="contact section" id="contact">
-			<h2 className="section-title typewriter-animation-1">
-				Let’s Work Together
-			</h2>
-
+		<AccessibleSection
+			id="contact"
+			title="Let’s Work Together"
+			className="contact section"
+		>
 			<div className="contact-wrapper">
 				<div className="contact-left">
 					<h3 className="contact-subtitle">Get In Touch</h3>
@@ -50,6 +51,6 @@ export default function Contact() {
 					<ContactForm />
 				</div>
 			</div>
-		</section>
+		</AccessibleSection>
 	);
 }

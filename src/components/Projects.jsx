@@ -1,51 +1,44 @@
-import { useState } from "react";
+import useCarousel from "./hooks/useCarousel";
 import ArrowLeft from "../assets/ArrowLeftIcon.svg?react";
 import ArrowRight from "../assets/ArrowRightIcon.svg?react";
 
 import "../styles/Projects.css";
 
 import projects from "../data/projects";
-import ProjectCard from "./subcomponents/ProjectsCard";
+import ProjectCard from "./subcomponents/ProjectCard";
+import NavArrow from "./subcomponents/NavArrow";
+import DotNavigation from "./subcomponents/DotNavigation";
+import AccessibleSection from "./subcomponents/AccessibleSection";
 
 export default function Projects() {
-	const [current, setCurrent] = useState(0);
+	const { current, next, prev, goTo } = useCarousel(projects.length);
 	const project = projects[current];
 
-	const nextSlide = () => {
-		setCurrent((prev) => (prev + 1) % projects.length);
-	};
-
-	const prevSlide = () => {
-		setCurrent((prev) => (prev - 1 + projects.length) % projects.length);
-	};
-
-	const goToSlide = (index) => {
-		setCurrent(index);
-	};
-
 	return (
-		<section className="projects section" id="projects">
-			<h2 className="section-title">Test Chamber Logs</h2>
-
-			<ProjectCard project={project} />
+		<AccessibleSection
+			id="projects"
+			title="Test Chamber Logs"
+			className="projects section"
+		>
+			<div className="project-card-wrapper">
+				{projects.map((project, index) => (
+					<ProjectCard
+						key={index}
+						project={project}
+						className={index === current ? "active" : ""}
+					/>
+				))}
+			</div>
 
 			<div className="project-navigation">
-				<button className="nav-arrow" onClick={prevSlide}>
-					<ArrowLeft className="arrow-icon" />
-				</button>
-				<div className="dots">
-					{projects.map((_, index) => (
-						<span
-							key={index}
-							className={`dot ${index === current ? "active" : ""}`}
-							onClick={() => goToSlide(index)}
-						/>
-					))}
-				</div>
-				<button className="nav-arrow" onClick={nextSlide}>
-					<ArrowRight className="arrow-icon" />
-				</button>
+				<NavArrow onClick={prev} Icon={ArrowLeft} label="Previous Project" />
+				<DotNavigation
+					total={projects.length}
+					currentIndex={current}
+					onSelect={goTo}
+				/>
+				<NavArrow onClick={next} Icon={ArrowRight} label="Next Project" />
 			</div>
-		</section>
+		</AccessibleSection>
 	);
 }

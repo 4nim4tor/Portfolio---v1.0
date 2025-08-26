@@ -10,11 +10,6 @@ export default function Header() {
 	return (
 		<header className="header">
 			<h2 className="logo typewriter-mini">{"[<Dev />]"}</h2>
-			{/* <h2 className="logo">
-				<span className="typewriter-bracket">[</span>
-				<span className="typewriter-core">&lt;Dev</span>
-				<span className="typewriter-close"> /&gt;]</span>
-			</h2> */}
 			<nav className="nav">
 				<a
 					href="#home"
@@ -38,4 +33,12 @@ export default function Header() {
 			</nav>
 		</header>
 	);
+}
+
+{
+	/* <h2 className="logo">
+				<span className="typewriter-bracket">[</span>
+				<span className="typewriter-core">&lt;Dev</span>
+				<span className="typewriter-close"> /&gt;]</span>
+			</h2> */
 }

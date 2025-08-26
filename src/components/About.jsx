@@ -1,6 +1,25 @@
 import "../styles/About.css";
+import workspaceImg from "../assets/Work-space.jpg";
+import errorMessages from "../data/errorMessages";
+import { useEffect, useState } from "react";
+import AccessibleSection from "./subcomponents/AccessibleSection";
 
 export default function About() {
+	const [showError, setShowError] = useState(false);
+	const [currentError, setCurrentError] = useState([]);
+
+	useEffect(() => {
+		const interval = setInterval(() => {
+			setShowError((prev) => !prev);
+			if (!showError) {
+				const randomIndex = Math.floor(Math.random() * errorMessages.length);
+				setCurrentError(errorMessages[randomIndex]);
+			}
+		}, 8000); // toggles every 8 seconds
+
+		return () => clearInterval(interval);
+	}, []);
+
 	const stats = [
 		{ value: "10+", label: "Projects Completed" },
 		{ value: "2+", label: "Years of Web Development Experience" },
@@ -8,11 +27,16 @@ export default function About() {
 	];
 
 	return (
-		<section id="about" className="about section">
-			<h2 className="section-title">About Me, Me, Me... and Me too!</h2>
+		<AccessibleSection
+			id="about"
+			title="About Me, Me, Me... and Me too!"
+			className="about section"
+		>
 			<p className="section-motto">
-				“The cake may be a lie, but clean code is the real dream.”
+				“Turns out the cake was a bug. I fixed it.” <br />
+				<span className="motto-author">— Wheatley, probably</span>
 			</p>
+
 			<div className="about-content">
 				<div className="about-text">
 					<h2>Curious by nature, strategic by design.</h2>
@@ -38,9 +62,19 @@ export default function About() {
 						simply asking better questions.
 					</p>
 				</div>
+
 				<div className="about-image">
-					<img src="/path/to/image.jpg" alt="Image of coding?" />
+					{showError ? (
+						<div className="error-message">
+							{currentError.map((line, index) => (
+								<p key={index}>{line}</p>
+							))}
+						</div>
+					) : (
+						<img src={workspaceImg} alt="Personal workspace" />
+					)}
 				</div>
+
 				<div className="about-stats">
 					{stats.map((stat, index) => (
 						<div className="stat" key={index}>
@@ -50,6 +84,6 @@ export default function About() {
 					))}
 				</div>
 			</div>
-		</section>
+		</AccessibleSection>
 	);
 }

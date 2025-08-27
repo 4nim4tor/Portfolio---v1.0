@@ -1,30 +1,24 @@
 import "../styles/About.css";
+
 import workspaceImg from "../assets/Work-space.jpg";
 import errorMessages from "../data/errorMessages";
-import { useEffect, useState } from "react";
+import { stats } from "../data/aboutStatistics";
+import { useState } from "react";
+
 import AccessibleSection from "./subcomponents/AccessibleSection";
+import ErrorDisplay from "./subcomponents/ErrorDisplay";
+import StatsDisplay from "./subcomponents/StatsDisplay";
+import useErrorCycle from "./hooks/useErrorCycle";
 
 export default function About() {
 	const [showError, setShowError] = useState(false);
 	const [currentError, setCurrentError] = useState([]);
 
-	useEffect(() => {
-		const interval = setInterval(() => {
-			setShowError((prev) => !prev);
-			if (!showError) {
-				const randomIndex = Math.floor(Math.random() * errorMessages.length);
-				setCurrentError(errorMessages[randomIndex]);
-			}
-		}, 8000); // toggles every 8 seconds
-
-		return () => clearInterval(interval);
-	}, []);
-
-	const stats = [
-		{ value: "10+", label: "Projects Completed" },
-		{ value: "2+", label: "Years of Web Development Experience" },
-		{ value: "3", label: "Languages Spoken Fluently" },
-	];
+	const { skipError } = useErrorCycle(
+		setShowError,
+		setCurrentError,
+		errorMessages
+	);
 
 	return (
 		<AccessibleSection
@@ -65,24 +59,13 @@ export default function About() {
 
 				<div className="about-image">
 					{showError ? (
-						<div className="error-message">
-							{currentError.map((line, index) => (
-								<p key={index}>{line}</p>
-							))}
-						</div>
+						<ErrorDisplay errorLines={currentError} onSkip={skipError} />
 					) : (
 						<img src={workspaceImg} alt="Personal workspace" />
 					)}
 				</div>
 
-				<div className="about-stats">
-					{stats.map((stat, index) => (
-						<div className="stat" key={index}>
-							<span>{stat.value}</span>
-							<small>{stat.label}</small>
-						</div>
-					))}
-				</div>
+				<StatsDisplay stats={stats} />
 			</div>
 		</AccessibleSection>
 	);

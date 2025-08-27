@@ -4,6 +4,7 @@ import GitHubIcon from "../assets/GitHub.svg?react";
 import LinkedInIcon from "../assets/LinkedIn.svg?react";
 import ContactForm from "./subcomponents/ContactForm";
 import AccessibleSection from "./subcomponents/AccessibleSection";
+import SocialLink from "./subcomponents/SocialLink";
 
 export default function Contact() {
 	return (
@@ -21,30 +22,19 @@ export default function Contact() {
 						can create something incredible together.
 					</p>
 					<div className="social-links">
-						<a
+						<SocialLink
 							href="https://www.linkedin.com/in/artur-jaworski-679287352/"
-							className="social-icon"
-							target="_blank"
-							rel="noopener noreferrer"
+							label="Visit my LinkedIn"
 						>
 							<LinkedInIcon className="linked-in-icon" />
-						</a>
-						<a
+						</SocialLink>
+						<SocialLink
 							href="https://github.com/4nim4tor"
-							className="social-icon"
-							target="_blank"
-							rel="noopener noreferrer"
+							label="Visit my Github"
 						>
 							<GitHubIcon className="git-hub-icon" />
-						</a>
-						<a
-							href="#"
-							className="social-icon"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<img src={LinkedInIcon} alt="TBD" className="???-icon" />
-						</a>
+						</SocialLink>
+						<SocialLink></SocialLink>
 					</div>
 				</div>
 				<div className="contact-right">

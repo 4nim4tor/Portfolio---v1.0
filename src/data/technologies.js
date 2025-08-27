@@ -10,18 +10,18 @@ const techs = [
 	{
 		Icon: VSCode,
 		name: "VS Code",
-		link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+		link: "https://code.visualstudio.com/",
 	},
 	{
 		Icon: GitHub,
 		name: "GitHub",
-		link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+		link: "https://github.com/",
 	},
 
 	{
 		Icon: OpenAI,
 		name: "Open AI",
-		link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+		link: "https://openai.com/index/chatgpt/",
 	},
 	{ Icon: Figma, name: "Figma", link: "https://www.figma.com/" },
 	{ Icon: Node, name: "Node.js", link: "https://nodejs.org/" },

@@ -9,8 +9,20 @@ export default function ProjectCard({ project, className }) {
 						<strong>Technologies:</strong> {project.technologies}
 					</p>
 					<div className="project-buttons">
-						<button className="primary">Live Demo</button>
-						<button className="outlined">View Code</button>
+						<a
+							href={project.demoLink}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<button className="project-button primary">Live Demo</button>
+						</a>
+						<a
+							href={project.codeLink}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<button className="project-button outlined">View Code</button>
+						</a>
 					</div>
 				</div>
 

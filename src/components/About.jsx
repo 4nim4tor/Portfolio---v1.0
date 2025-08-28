@@ -1,6 +1,6 @@
 import "../styles/About.css";
 
-import workspaceImg from "../assets/Work-space.jpg";
+import workspaceImg from "../assets/images/Work-space.jpg";
 import errorMessages from "../data/errorMessages";
 import { stats } from "../data/aboutStatistics";
 import { useState } from "react";

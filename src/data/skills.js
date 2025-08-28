@@ -1,10 +1,10 @@
-import JS from "../assets/JavaScript.svg?react";
-import CSS from "../assets/CSS.svg?react";
-import HTML from "../assets/HTML.svg?react";
-import React from "../assets/React.svg?react";
-import Vite from "../assets/Vite.js.svg?react";
-import Next from "../assets/Next.js-icon.svg?react";
-import Tailwind from "../assets/Tailwind.css-icon.svg?react";
+import JS from "../assets/svgs/JavaScript.svg?react";
+import CSS from "../assets/svgs/CSS.svg?react";
+import HTML from "../assets/svgs/HTML.svg?react";
+import React from "../assets/svgs/React.svg?react";
+import Vite from "../assets/svgs/Vite.js.svg?react";
+import Next from "../assets/svgs/Next.js-icon.svg?react";
+import Tailwind from "../assets/svgs/Tailwind.css-icon.svg?react";
 
 const skills = [
 	{

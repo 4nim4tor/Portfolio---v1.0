@@ -1,7 +1,7 @@
 import "../styles/Contact.css";
 
-import GitHubIcon from "../assets/GitHub.svg?react";
-import LinkedInIcon from "../assets/LinkedIn.svg?react";
+import GitHubIcon from "../assets/svgs/GitHub.svg?react";
+import LinkedInIcon from "../assets/svgs/LinkedIn.svg?react";
 import ContactForm from "./subcomponents/ContactForm";
 import AccessibleSection from "./subcomponents/AccessibleSection";
 import SocialLink from "./subcomponents/SocialLink";

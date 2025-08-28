@@ -1,10 +1,10 @@
-import VSCode from "../assets/VSCode.svg?react";
-import GitHub from "../assets/GitHub.svg?react";
-import OpenAI from "../assets/Open-AI-2.svg?react";
-import Figma from "../assets/Figma.svg?react";
-import Node from "../assets/Node.js.svg?react";
-import Vercel from "../assets/Vercel.svg?react";
-import Photoshop from "../assets/Photoshop.svg?react";
+import VSCode from "../assets/svgs/VSCode.svg?react";
+import GitHub from "../assets/svgs/GitHub.svg?react";
+import OpenAI from "../assets/svgs/Open-AI-2.svg?react";
+import Figma from "../assets/svgs/Figma.svg?react";
+import Node from "../assets/svgs/Node.js.svg?react";
+import Vercel from "../assets/svgs/Vercel.svg?react";
+import Photoshop from "../assets/svgs/Photoshop.svg?react";
 
 const techs = [
 	{

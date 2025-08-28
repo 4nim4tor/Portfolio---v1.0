@@ -1,6 +1,6 @@
-import ecommerceImg from "../assets/ecommerce.png";
-import portfolioImg from "../assets/portfolio.png";
-import taskManagerImg from "../assets/taskmanager.png";
+import ecommerceImg from "../assets/images/ecommerce.png";
+import portfolioImg from "../assets/images/portfolio.png";
+import taskManagerImg from "../assets/images/taskmanager.png";
 
 const projects = [
 	{

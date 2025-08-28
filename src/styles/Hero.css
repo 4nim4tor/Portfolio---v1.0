@@ -66,13 +66,12 @@
 }
 
 .hero-buttons .outlined {
-    background: transparent;
+    background: var(--bg-color);
     color: var(--accent-color);
     border: 1.5px solid var(--accent-color);
 }
 
 .hero-buttons button:hover {
-    transform: scale(1.05);
     box-shadow: 0 0 15px var(--accent-color);
 }
 

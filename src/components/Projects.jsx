@@ -1,6 +1,6 @@
 import useCarousel from "./hooks/useCarousel";
-import ArrowLeft from "../assets/ArrowLeftIcon.svg?react";
-import ArrowRight from "../assets/ArrowRightIcon.svg?react";
+import ArrowLeft from "../assets/svgs/ArrowLeftIcon.svg?react";
+import ArrowRight from "../assets/svgs/ArrowRightIcon.svg?react";
 
 import "../styles/Projects.css";
 

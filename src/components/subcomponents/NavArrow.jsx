@@ -1,7 +1,11 @@
+import { div } from "framer-motion/client";
+
 export default function NavArrow({ onClick, Icon, label }) {
 	return (
-		<button className="nav-arrow" onClick={onClick} aria-label={label}>
-			<Icon className="arrow-icon" />
-		</button>
+		<div className="nav-arrow">
+			<button className="nav-button" onClick={onClick} aria-label={label}>
+				<Icon className="arrow-icon" />
+			</button>
+		</div>
 	);
 }

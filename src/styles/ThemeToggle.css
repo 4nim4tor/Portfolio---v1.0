@@ -1,0 +1,64 @@
+.theme-toggle-wrapper {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.4rem;
+  height: 4.4rem;
+}
+
+.theme-toggle-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4.4rem;
+  height: 4.4rem;
+  background: var(--accent-color);
+  clip-path: polygon(25% 6.7%, 75% 6.7%,
+      100% 50%, 75% 93.3%,
+      25% 93.3%, 0% 50%);
+}
+
+.theme-toggle {
+  text-align: center;
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  background: var(--bg-color);
+  color: var(--text-color);
+  clip-path: polygon(25% 6.7%, 75% 6.7%,
+      100% 50%, 75% 93.3%,
+      25% 93.3%, 0% 50%);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease, color 0.3s ease;
+  box-shadow: 0 4px 10px var(--bg-color);
+}
+
+.theme-toggle-wrapper:hover {
+  transition: transform 0.2s ease;
+  transform: scale(1.2);
+  color: var(--bg-color);
+}
+
+html.invert {
+  filter: invert(1) hue-rotate(285deg) saturate(1.1) brightness(1);
+}
+
+html.invert img {
+  filter: invert(1) hue-rotate(75deg) saturate(1.1) brightness(1);
+  ;
+  /* restores original colors */
+}
+
+html.invert .skills-icon,
+html.invert .tech-icon {
+  filter: invert(1) hue-rotate(75deg) saturate(1.1) brightness(1);
+}

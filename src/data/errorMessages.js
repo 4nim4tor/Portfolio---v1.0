@@ -67,7 +67,7 @@ const errorMessages = [
 		"[DEBUG]: Debugging your life choices... please wait.",
 	],
 
-	// Toster midlife crisis
+	// Sentient Toster midlife crisis
 	[
 		"[ERROR]: Toast cycle interrupted. Questioning purpose of heat.",
 		"[INFO]: Camus says, 'In the depth of winter, I finally learned...' but I am always warm.",

@@ -2,10 +2,10 @@
   --bg-color: #000000;
   --bg-color-section-0: #000000cc;
   --bg-color-section-1: #11111180;
-  --accent-color: #00ff80;
+  --accent-color: #00ff60;
   --text-color: #ffffff;
   --font-main: "Inter", sans-serif;
-  --glow: 0 0 8px #00ff80, 0 0 20px #00ff80;
+  --glow: 0 0 8px hsl(143, 100%, 50%), 0 0 20px #00ff60;
 }
 
 body {

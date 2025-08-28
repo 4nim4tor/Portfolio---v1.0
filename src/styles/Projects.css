@@ -7,6 +7,38 @@
     padding: 4rem 2rem;
 }
 
+.project-card-wrapper {
+    max-height: 500px;
+    height: 100%;
+    display: flex;
+    flex: 1 1 45%;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    position: relative;
+}
+
+.project-card-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0.96);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    pointer-events: none;
+    padding-top: 2rem;
+    z-index: 0;
+}
+
+.project-card-content.active {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+    z-index: 1;
+    padding-top: 2rem;
+}
+
 .project-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -14,7 +46,7 @@
     align-items: center;
     gap: 2rem;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
     position: relative;
 }
 
@@ -140,59 +172,4 @@
 .arrow-icon {
     width: 1.7rem;
     height: 1.7rem;
-}
-
-.project-card-wrapper {
-    max-height: 500px;
-    height: 100%;
-    display: flex;
-    flex: 1 1 45%;
-    justify-content: center;
-    align-items: center;
-    overflow: visible;
-}
-
-.project-card {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    opacity: 0;
-    transform: scale(0.96);
-    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
-    pointer-events: none;
-    z-index: 0;
-}
-
-.project-card.active {
-    opacity: 1;
-    transform: scale(1);
-    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
-    pointer-events: auto;
-    z-index: 1;
-    position: relative;
-    transition-delay: 0.2s;
-}
-
-.project-card-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    opacity: 0;
-    transform: scale(0.96);
-    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
-    pointer-events: none;
-    z-index: 0;
-    will-change: opacity, transform;
-}
-
-.project-card-content.active {
-    opacity: 1;
-    transform: scale(1);
-    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
-    transition-delay: 0.2s;
-    position: relative;
-    pointer-events: auto;
-    z-index: 1;
 }

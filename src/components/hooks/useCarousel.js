@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 
-export default function useCarousel(length, interval = 8000) {
+export default function useCarousel(length, interval = 15000) {
 	const [current, setCurrent] = useState(0);
 	const autoPlayRef = useRef(null);
 

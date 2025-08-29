@@ -106,7 +106,57 @@
     animation: glitchFade 0.5s ease-in-out;
 }
 
-.error-message p {
+/* Make error replacement match image slot size & style */
+.error-box {
+    position: relative;
+    background-color: var(--bg-color);
+    border: 2px solid var(--accent-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    max-width: 100%;
+    height: 100%;
+    box-shadow: var(--egg-shadow);
+    /* from glitch modal */
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.error-box:hover {
+    transform: scale(1.5);
+}
+
+/* Inherit glitch-block styles via GlitchModal.css */
+.egg-message {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: left;
+}
+
+/* Skip button alignment for this slot */
+.error-box .skip-button {
+    margin-top: 1rem;
+}
+
+.error-box::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        repeating-linear-gradient(to bottom,
+            rgba(255, 255, 255, 0.04) 0px,
+            rgba(255, 255, 255, 0.04) 1px,
+            transparent 2px,
+            transparent 3px),
+        radial-gradient(1200px 600px at 20% -10%, rgba(158, 255, 244, 0.06), transparent 60%);
+    mix-blend-mode: overlay;
+    pointer-events: none;
+}
+
+/* .error-message p {
     animation: error-flicker 1.5s infinite;
 }
 
@@ -132,7 +182,7 @@
         opacity: 1;
         transform: scale(1);
     }
-}
+} */
 
 .skip-button {
     margin-top: 0.5rem;

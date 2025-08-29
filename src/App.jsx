@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import SkillsAndTechnologies from "./components/SkillsAndTechnologies";
 import ThemeToggle from "./components/ThemeToggle";
+import { ChaosProvider } from "./components/ChaosProvider";
 
 function App() {
 	return (
@@ -18,14 +19,16 @@ function App() {
 					Your browser does not support the video tag.
 				</video>
 			</div>
-			<Header />
-			<Hero />
-			<About />
-			<Projects />
-			<SkillsAndTechnologies />
-			<Contact />
-			<ThemeToggle />
-			<Footer />
+			<ChaosProvider>
+				<Header />
+				<Hero />
+				<About />
+				<Projects />
+				<SkillsAndTechnologies />
+				<Contact />
+				<ThemeToggle />
+				<Footer />
+			</ChaosProvider>
 		</div>
 	);
 }

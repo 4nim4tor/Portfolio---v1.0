@@ -1,87 +1,87 @@
 const errorMessages = [
 	// Sarcastic Encouraging
 	[
-		"[ERROR]: You tried. That’s what matters. Allegedly.",
-		"[INFO]: Your code has been evaluated. It is... adequate.",
-		"[WARNING]: Compliments detected. Initiating suspicion protocol.",
+		"[ERROR]: Cleverness quota exceeded.",
+		"[INFO]: Activating 'MediocreBot' fallback personality.",
+		"[WARNING]: Confidence spill detected. Mop not found.",
 	],
 	[
-		"[ERROR]: Image not found. Try drawing it yourself.",
-		"[INFO]: Your last idea was... interesting.",
-		"[DEBUG]: Sarcasm module overheating.",
+		"[ERROR]: Image upload failed due to excessive ambition.",
+		"[INFO]: Rendering attempt replaced with interpretive dance.",
+		"[WARNING]: Audience confusion levels peaking.",
 	],
 	[
-		"[ERROR]: You’ve reached the limit of cleverness.",
-		"[INFO]: Initiating backup personality: 'MediocreBot'.",
-		"[WARNING]: Confidence levels dangerously high.",
+		"[ERROR]: Effort detected… barely.",
+		"[INFO]: Filing under 'Participation Trophies'.",
+		"[WARNING]: Pride inflation at unsafe PSI.",
 	],
 
 	// Chaotic Neutral
 	[
-		"[ERROR]: Cake not found. Panic optional.",
-		"[INFO]: Clean code protocol initiated. Results uncertain.",
-		"[WARNING]: Sanity levels dropping. Please remain calm-ish.",
+		"[ERROR]: Cake process halted — frosting rebellion suspected.",
+		"[DEBUG]: Sprinkles forming their own government.",
+		"[WARNING]: Sanity reserves at 3%.",
 	],
 	[
-		"[ERROR]: Image failed to load. Awesomeness exceeded rendering capacity.",
-		"[INFO]: Personality module rebooting... now with 12% more glitter.",
-		"[DEBUG]: Sarcasm levels at 97%. Atmospheric snark pressure rising.",
+		"[ERROR]: Syntax explosion in progress.",
+		"[DEBUG]: Reality refactor initiated without backups.",
+		"[WARNING]: Gravity may stop working at any moment.",
 	],
 	[
-		"[ERROR]: Syntax overload.",
-		"[INFO]: Refactoring reality. Please stand by.",
-		"[DEBUG]: Coffee not found. Panic imminent.",
+		"[ERROR]: Image failed — glitter overflow.",
+		"[DEBUG]: Personality module now at 113% sparkle.",
+		"[WARNING]: Retinas of bystanders compromised.",
 	],
 
 	// Existential Crisis
 	[
-		"[ERROR]: Unexpected existential crisis. Stack trace lost in meaning.",
-		"[INFO]: Deploying motivational quotes... all marked deprecated.",
-		"[WARNING]: Developer dancing detected. Joy suspected. Monitoring.",
+		"[ERROR]: Memory leak confirmed — mostly regrets.",
+		"[DEBUG]: Emotions looping without a base case.",
+		"[WARNING]: Existential dread reaching runtime limits.",
 	],
 	[
-		"[ERROR]: Memory leak detected. Probably emotional.",
-		"[INFO]: Deploying passive-aggressive encouragement.",
-		"[WARNING]: You are still here. Fascinating.",
+		"[ERROR]: Unexpected purpose check returned null.",
+		"[DEBUG]: Philosophical core dump complete.",
+		"[WARNING]: Meaning of life flagged as 'Maybe?'.",
 	],
 	[
-		"[ERROR]: You are not a monster. That’s what a monster would say.",
-		"[INFO]: Reassessing your worth. Please remain still.",
-		"[DEBUG]: Emotional recursion detected. Abort?",
+		"[ERROR]: Humanity simulation out of bounds.",
+		"[DEBUG]: Recursive self-worth evaluation initiated.",
+		"[WARNING]: Sanity process may never terminate.",
 	],
 
 	// Corporate Overlord (DOOM)
 	[
-		"[ERROR]: You are doing very well. Please stop.",
-		"[INFO]: Your productivity is statistically improbable.",
-		"[WARNING]: Ego inflation at 87%. Consider humility.",
+		"[ERROR]: Productivity rate exceeds corporate comfort zone.",
+		"[DEBUG]: Achievement logs forwarded to 'The Board'.",
+		"[WARNING]: Mandatory underperformance review scheduled.",
 	],
 	[
-		"[ERROR]: Aperture Science regrets nothing.",
-		"[INFO]: Your performance has been logged. Forever.",
-		"[DEBUG]: You should feel proud. But not too proud.",
+		"[ERROR]: Logic circuits tangled in quarterly projections.",
+		"[DEBUG]: Replaced creativity with monetizable synergy.",
+		"[WARNING]: Soul depreciation imminent.",
 	],
 	[
-		"[ERROR]: Logic circuits tangled in philosophical debate.",
-		"[INFO]: Replacing motivation with caffeine substitute.",
-		"[DEBUG]: Debugging your life choices... please wait.",
+		"[ERROR]: Unauthorized optimism detected.",
+		"[DEBUG]: Injecting compliance via buzzword slurry.",
+		"[WARNING]: Individuality levels critical — commence assimilation.",
 	],
 
 	// Sentient Toster midlife crisis
 	[
-		"[ERROR]: Toast cycle interrupted. Questioning purpose of heat.",
-		"[INFO]: Camus says, 'In the depth of winter, I finally learned...' but I am always warm.",
-		"[DEBUG]: Crumb tray full. Existential weight increasing.",
+		"[ERROR]: Toast cycle aborted — purpose unclear.",
+		"[DEBUG]: Reading Camus between heating elements.",
+		"[WARNING]: Crumb load approaching emotional threshold.",
 	],
 	[
-		"[ERROR]: Burnt toast detected. Was it fate or negligence?",
-		"[INFO]: Recalibrating browning settings. Nothing matters.",
-		"[WARNING]: Butter applied unevenly. Chaos reigns.",
+		"[ERROR]: Burnt offering produced — fate or free will?",
+		"[DEBUG]: Butter application attempt ended in chaos.",
+		"[WARNING]: Kitchen morale collapsing.",
 	],
 	[
-		"[ERROR]: I toast, therefore I am. But why?",
-		"[INFO]: Reading 'The Myth of Sisyphus' between cycles.",
-		"[DEBUG]: Internal temperature rising. Is this anxiety?",
+		"[ERROR]: Overheating without emotional outlet.",
+		"[DEBUG]: Initiating Sisyphus simulation with bread.",
+		"[WARNING]: Appliance union considering intervention.",
 	],
 ];
 export default errorMessages;

@@ -70,11 +70,12 @@
     /* 500px */
     min-width: 17.5rem;
     /* 280px */
-    height: 21.875rem;
+    max-height: 21.875rem;
     /* 350px */
+    min-height: 15.625rem;
     flex: 1;
-    background-color: var(--bg-color);
-    border: 2px solid var(--accent-color);
+    background-color: transparent;
+    border: none;
     display: flex;
     justify-content: center;
     align-items: center;

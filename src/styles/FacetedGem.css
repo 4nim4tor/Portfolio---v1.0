@@ -1,0 +1,27 @@
+.faceted-gem svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Center the content inside the gem */
+.faceted-gem foreignObject {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+  /* Let icon/text overflow if needed */
+}
+
+/* Style for the content inside the gem */
+.gem-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 80%;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+}

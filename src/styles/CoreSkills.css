@@ -37,6 +37,7 @@
     align-items: center;
     transition: transform 0.3s ease;
     position: relative;
+    object-fit: fill;
 }
 
 .hex:hover {
@@ -50,11 +51,6 @@
 }
 
 .skill-hex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     background-color: var(--bg-color);
     clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
     text-decoration: none;

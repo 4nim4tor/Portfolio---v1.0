@@ -27,8 +27,8 @@
 }
 
 .diammond {
-  width: 250px;
-  height: 250px;
+  width: 275px;
+  height: 275px;
   background-color: var(--accent-color);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   display: flex;

@@ -1,3 +1,5 @@
+import HexGem from "./HexGem";
+
 export default function SkillHex({ Icon, name, link }) {
 	return (
 		<div className="hex" key={name}>
@@ -8,10 +10,14 @@ export default function SkillHex({ Icon, name, link }) {
 				rel="noopener noreferrer"
 				aria-label={`Learn more about ${name}`}
 			>
-				<Icon
-					className={`skills-icon ${name.toLowerCase().replace(".", "")}-icon`}
-				/>
-				<span>{name}</span>
+				<HexGem>
+					<Icon
+						className={`skills-icon ${name
+							.toLowerCase()
+							.replace(".", "")}-icon`}
+					/>
+					<span>{name}</span>
+				</HexGem>
 			</a>
 		</div>
 	);

@@ -1,5 +1,3 @@
-import { div } from "framer-motion/client";
-
 export default function NavArrow({ onClick, Icon, label }) {
 	return (
 		<div className="nav-arrow">

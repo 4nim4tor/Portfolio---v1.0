@@ -1,4 +1,4 @@
-import DiamondGem from "./diamondGem";
+import DiamondGem from "./DiamondGem";
 
 export default function TechDiamond({ Icon, name, link }) {
 	return (

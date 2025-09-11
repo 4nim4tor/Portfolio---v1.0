@@ -10,6 +10,7 @@ export default function GemBase({
 	saturation = 0,
 	lightnessBase = 5,
 	lightnessRange = 30,
+	viewBox = "-9 3.5 293 293",
 	children,
 }) {
 	const uniqueId = useId();
@@ -18,7 +19,7 @@ export default function GemBase({
 	return (
 		<svg
 			className="faceted-gem"
-			viewBox="-7 2 290 300"
+			viewBox={viewBox}
 			onMouseMove={handleMouseMove}
 		>
 			<GemGradients

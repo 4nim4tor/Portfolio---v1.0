@@ -1,10 +1,11 @@
+import profilePicture from "../assets/images/Profile-Pic.jpg";
 import "../styles/Hero.css";
 
 export default function Hero() {
 	return (
 		<section className="hero section" id="home">
 			<div className="profile-circle">
-				<img src="../assets/Profile-Pic.png" alt="Profile portrait of Artur" />
+				<img src={profilePicture} alt="Profile portrait of Artur" />
 			</div>
 			<h1
 				className="typewriter-container matrix-text"

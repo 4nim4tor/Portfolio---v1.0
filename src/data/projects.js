@@ -1,6 +1,7 @@
 import cyberGarage from "../assets/images/cyberGarage.png";
 import dotArtImg from "../assets/images/dotArtImg.png";
 import wheatleyScourge from "../assets/images/wheatleyScourge.png";
+import portfolioImg from "../assets/images/portfolioInception.png";
 
 const projects = [
 	{
@@ -35,7 +36,7 @@ const projects = [
 		description:
 			"A clean and modern self-hosted portfolio site built to showcase personal projects, experiments and evolutions in web design. With a focus on clarity, responsiveness and ease of navigation, this portfolio reflects my growth and versatility as a front-end developer.",
 		technologies: "React, Vite, CSS Modules",
-		image: dotArtImg, // Replace with <img> or imported image later
+		image: portfolioImg, // Replace with <img> or imported image later
 		demoLink: "https://arturjj.vercel.app/",
 		codeLink: "https://github.com/4nim4tor/Portfolio---v1.0",
 	},

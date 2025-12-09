@@ -10,7 +10,7 @@ const projects = [
 			"An interactive demo of a Portal-inspired assistant widget built to unleash a delightfully unhelpful, Clippy-esque AI onto the user. This project features my first use of reactive 3D models that respond dynamically to cursor movement, adding personality and depth to the experience. A playful exploration of character-driven UI, interactive behavior, and modern front-end techniques.",
 		technologies: "React, Three.js, Vite",
 		image: wheatleyScourge, // Replace with <img> or imported image later
-		demoLink: "the-wheatley-scourge.vercel.app",
+		demoLink: "https://the-wheatley-scourge.vercel.app/",
 		codeLink: "https://github.com/4nim4tor/The-Wheatley-Scourge",
 	},
 	{
